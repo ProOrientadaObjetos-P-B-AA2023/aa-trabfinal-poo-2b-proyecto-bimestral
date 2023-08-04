@@ -57,6 +57,7 @@ public class PlanPostPagoMegas extends PlanMovil{
     
     @Override
     public void calcularCostoTotal(){
+        super.setCostoTotal((megasEnGigas * costoGiga) + tarifaBase);
     }
 
     @Override

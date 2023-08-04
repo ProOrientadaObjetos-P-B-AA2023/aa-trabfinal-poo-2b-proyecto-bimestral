@@ -78,6 +78,8 @@ public class PlanPostPagoMinutosMegasEconomico extends PlanMovil{
     
     @Override
     public void calcularCostoTotal(){
+        double calculo = (minutos * costoMinuto) + (megasEnGigas * costoGiga);
+        super.setCostoTotal(calculo - (calculo * porcentajeDescuento / 100));
     }
 
     @Override

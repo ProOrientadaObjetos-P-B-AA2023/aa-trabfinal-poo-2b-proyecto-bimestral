@@ -66,6 +66,7 @@ public class PlanPostPagoMinutos extends PlanMovil{
     
     @Override
     public void calcularCostoTotal(){
+        super.setCostoTotal((minutos * costoMinuto) + (minutosInternacionales * costoMinutoInternacional));
     }
 
     @Override

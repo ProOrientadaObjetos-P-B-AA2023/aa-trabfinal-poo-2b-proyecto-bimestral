@@ -56,6 +56,8 @@ public class Factura extends javax.swing.JFrame {
         data_costoMinuto1 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         data_costoMegas1 = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        data_fechaEmision = new javax.swing.JTextField();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -74,20 +76,20 @@ public class Factura extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("Plan Movil:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
+        jLabel2.setText("Fecha (dd/mm/yy)");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Minutos");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setText("Megas");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel6.setText("Minutos Internacionales");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton1.setText("FACTURAR");
@@ -115,40 +117,48 @@ public class Factura extends javax.swing.JFrame {
                 data_minutosActionPerformed(evt);
             }
         });
-        getContentPane().add(data_minutos, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 130, -1));
-        getContentPane().add(data_megas, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 130, -1));
-        getContentPane().add(data_MinutosInternacional, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, 130, -1));
+        getContentPane().add(data_minutos, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 130, -1));
+        getContentPane().add(data_megas, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 130, -1));
+        getContentPane().add(data_MinutosInternacional, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 130, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("Tarifa Base");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel7.setText("Descuento");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel8.setText("Costo");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 390, -1, -1));
-        getContentPane().add(data_tarifaBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 70, -1));
-        getContentPane().add(data_descuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 340, 70, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 410, -1, -1));
+        getContentPane().add(data_tarifaBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 70, -1));
+        getContentPane().add(data_descuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 70, -1));
 
         data_CostoMinutosInternacional.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 data_CostoMinutosInternacionalActionPerformed(evt);
             }
         });
-        getContentPane().add(data_CostoMinutosInternacional, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 420, 70, -1));
+        getContentPane().add(data_CostoMinutosInternacional, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 440, 70, -1));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel10.setText("Costo");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, -1, -1));
-        getContentPane().add(data_costoMinuto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 70, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, -1, -1));
+        getContentPane().add(data_costoMinuto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 70, -1));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel11.setText("Costo");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, -1, -1));
-        getContentPane().add(data_costoMegas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 340, 70, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, -1, -1));
+        getContentPane().add(data_costoMegas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 70, -1));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel9.setText("Plan Movil:");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
+
+        data_fechaEmision.setToolTipText("");
+        data_fechaEmision.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        getContentPane().add(data_fechaEmision, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 120, -1));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo.jpg"))); // NOI18N
         fondo.setText("jLabel9");
@@ -285,6 +295,7 @@ public class Factura extends javax.swing.JFrame {
     private javax.swing.JTextField data_costoMegas1;
     private javax.swing.JTextField data_costoMinuto1;
     private javax.swing.JTextField data_descuento;
+    private javax.swing.JTextField data_fechaEmision;
     private javax.swing.JTextField data_megas;
     private javax.swing.JTextField data_minutos;
     private javax.swing.JTextField data_tarifaBase;
@@ -301,5 +312,6 @@ public class Factura extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
